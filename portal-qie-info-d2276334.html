@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于企鹅体育 · 站点介绍</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f6f0;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            color: #2d2a24;
+            line-height: 1.7;
+            padding: 2rem 1.2rem;
+        }
+
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fefcf7;
+            padding: 2.8rem 2.2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eae6dc;
+        }
+
+        /* 开场短句 */
+        .opening {
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #4a4238;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e2dcd0;
+            margin-bottom: 2rem;
+        }
+
+        .opening::before {
+            content: "❝ ";
+            color: #b8a58a;
+        }
+
+        .opening::after {
+            content: " ❞";
+            color: #b8a58a;
+        }
+
+        /* 承接段落 */
+        .intro p {
+            margin-bottom: 1.6rem;
+            text-indent: 2em;
+        }
+
+        .intro p:first-of-type {
+            margin-top: 0.2rem;
+        }
+
+        /* 特点列表 — 温和卡片式 */
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin: 2rem 0 2.2rem 0;
+        }
+
+        .feature-item {
+            flex: 1 1 200px;
+            background: #f4efe7;
+            padding: 1.2rem 1rem 1rem 1rem;
+            border-radius: 14px;
+            border-left: 4px solid #b8a58a;
+            transition: background 0.2s ease;
+        }
+
+        .feature-item:hover {
+            background: #ede6db;
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            color: #3d352b;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item p {
+            font-size: 0.95rem;
+            color: #5b5348;
+            line-height: 1.6;
+            text-indent: 0;
+        }
+
+        /* 引用块 / 提示框 */
+        .callout {
+            background: #f1ebe2;
+            border-left: 5px solid #b8a58a;
+            padding: 1.2rem 1.6rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 0.98rem;
+            color: #3d352b;
+        }
+
+        .callout strong {
+            font-weight: 600;
+            color: #2d241c;
+        }
+
+        /* 温和结尾 */
+        .closing {
+            margin-top: 2.2rem;
+            padding-top: 1.6rem;
+            border-top: 1px solid #e2dcd0;
+            font-style: italic;
+            color: #5f5548;
+            font-size: 1rem;
+        }
+
+        .closing a {
+            color: #6f5e49;
+            text-decoration: none;
+            border-bottom: 1px dotted #b8a58a;
+            transition: border-bottom 0.2s, color 0.2s;
+        }
+
+        .closing a:hover {
+            border-bottom: 1px solid #6f5e49;
+            color: #2d241c;
+        }
+
+        /* 内嵌链接样式（段落中的链接） */
+        a {
+            color: #6f5e49;
+            text-decoration: none;
+            border-bottom: 1px dotted #b8a58a;
+            transition: border-bottom 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #6f5e49;
+            color: #2d241c;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1.2rem 0.8rem;
+            }
+
+            .page {
+                padding: 1.8rem 1.2rem;
+            }
+
+            .opening {
+                font-size: 1.2rem;
+            }
+
+            .feature-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* 装饰性小字 */
+        .colophon {
+            margin-top: 2.5rem;
+            font-size: 0.8rem;
+            color: #b5ab9c;
+            text-align: right;
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 开场短句 -->
+        <div class="opening">
+            一个持续运转的内容节点，关于体育、观赛与社区。
+        </div>
+
+        <!-- 承接段落（站点介绍与可信说明） -->
+        <div class="intro">
+            <p>
+                <strong>portal-qie.com</strong> 作为「企鹅体育」的聚合与导航入口，并非一个全新搭建的独立平台，而是将已有信息、工具与资源加以整理，方便熟悉或初次接触的朋友快速定位。站点的运营思路偏向精简——不堆砌多余模块，也不做浮夸承诺，只呈现经过筛选的实用内容。
+            </p>
+            <p>
+                很多用户初次来到这个页面时，会好奇它和常见的体育门户有什么不同。简单来说，这里更侧重于「连接」而非「原创」：将分散在论坛、数据站、视频频道以及社群中的有效信息，用相对清爽的方式归拢到一起。如果你已经对体育资讯有稳定的获取渠道，那么<a href="https://portal-qie.com">企鹅体育</a>更像一个补充性质的参照系；如果你刚开始关注相关赛事或活动，这里则能提供一条比较清晰的索引路径。
+            </p>
+        </div>
+
+        <!-- 特点列表（卡片式，四个维度） -->
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>内容筛选</h3>
+                <p>不追求全天候刷新的快讯，而是保留有长期参考价值的赛程、规则说明与社区讨论汇总。</p>
+            </div>
+            <div class="feature-item">
+                <h3>界面倾向</h3>
+                <p>文字优先，减少广告位与自动播放元素，适合安静浏览或快速查找某一类信息。</p>
+            </div>
+            <div class="feature-item">
+                <h3>可信说明</h3>
+                <p>所有外部链接均标注来源属性，不伪装成官方渠道，引用数据时会附带简单的时间备注。</p>
+            </div>
+            <div class="feature-item">
+                <h3>社区氛围</h3>
+                <p>内置有轻量讨论区的跳转入口，鼓励基于事实的交流而非情绪化争论。</p>
+            </div>
+        </div>
+
+        <!-- 引用块 / 提示框（温和提示） -->
+        <div class="callout">
+            <strong>✎ 使用提示</strong><br>
+            如果你在寻找某个赛事的直播回放、历史数据或特定队伍的近期赛程，可以优先浏览站内「整理」栏目——大部分链接指向的是公开且稳定的资源。部分外部服务（如视频平台或数据接口）可能会因对方调整而失效，届时页面会尝试更新替代条目。
+        </div>
+
+        <!-- 温和结尾（自然嵌入链接） -->
+        <div class="closing">
+            总的来说，这个页面并不试图成为你唯一的体育信息终点站，但如果你恰好需要一个安静、少干扰的起点，不妨把 <a href="https://portal-qie.com">企鹅体育</a> 记在书签里。它一直在这里，更新不快，但足够稳定。
+        </div>
+
+        <!-- 小彩蛋：生成日期（非必要，仅作质感） -->
+        <div class="colophon">
+            ◇ 页面信息整理于近期 · 内容持续微调
+        </div>
+    </div>
+</body>
+</html>
